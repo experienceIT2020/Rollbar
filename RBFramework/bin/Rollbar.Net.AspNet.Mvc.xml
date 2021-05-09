@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rollbar.Net.AspNet.Mvc</name>
+    </assembly>
+    <members>
+        <member name="T:Rollbar.Net.AspNet.Mvc.ExceptionContextPackage">
+            <summary>
+            Class ExceptionContextPackage.
+            Implements the <see cref="T:Rollbar.RollbarPackageBase" /></summary>
+            <seealso cref="T:Rollbar.RollbarPackageBase" />
+        </member>
+        <member name="F:Rollbar.Net.AspNet.Mvc.ExceptionContextPackage._exceptionContext">
+            <summary>
+            The exception context
+            </summary>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.Mvc.ExceptionContextPackage.#ctor(System.Web.Mvc.ExceptionContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.Mvc.ExceptionContextPackage" /> class.
+            </summary>
+            <param name="exceptionContext">The exception context.</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.Mvc.ExceptionContextPackage.#ctor(System.Web.Mvc.ExceptionContext,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.Mvc.ExceptionContextPackage" /> class.
+            </summary>
+            <param name="exceptionContext">The exception context.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.Mvc.ExceptionContextPackage.ProduceRollbarData">
+            <summary>
+            Produces the rollbar data.
+            </summary>
+            <returns>Rollbar Data DTO or null (if packaging is not applicable in some cases).</returns>
+        </member>
+        <member name="T:Rollbar.Net.AspNet.Mvc.RollbarExceptionFilter">
+            <summary>
+            Class RollbarExceptionFilter.
+            Implements the <see cref="T:System.Web.Mvc.IExceptionFilter" /></summary>
+            <seealso cref="T:System.Web.Mvc.IExceptionFilter" />
+        </member>
+        <member name="F:Rollbar.Net.AspNet.Mvc.RollbarExceptionFilter._commonRollbarDataTitle">
+            <summary>
+            The common rollbar data title
+            </summary>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.Mvc.RollbarExceptionFilter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.Mvc.RollbarExceptionFilter" /> class.
+            </summary>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.Mvc.RollbarExceptionFilter.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.Mvc.RollbarExceptionFilter" /> class.
+            </summary>
+            <param name="commonRollbarDataTitle">The common rollbar data title.</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.Mvc.RollbarExceptionFilter.OnException(System.Web.Mvc.ExceptionContext)">
+            <summary>
+            Called when an exception occurs.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+    </members>
+</doc>

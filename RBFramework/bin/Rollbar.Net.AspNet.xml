@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rollbar.Net.AspNet</name>
+    </assembly>
+    <members>
+        <member name="T:Rollbar.Net.AspNet.HttpContextPackageDecorator">
+            <summary>
+            Class HttpContextPackageDecorator.
+            Implements the <see cref="T:Rollbar.RollbarPackageDecoratorBase" /></summary>
+            <seealso cref="T:Rollbar.RollbarPackageDecoratorBase" />
+        </member>
+        <member name="F:Rollbar.Net.AspNet.HttpContextPackageDecorator._packageToDecorate">
+            <summary>
+            The strategy to decorate
+            </summary>
+        </member>
+        <member name="F:Rollbar.Net.AspNet.HttpContextPackageDecorator._httpContext">
+            <summary>
+            The HTTP context
+            </summary>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpContextPackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpContextPackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpContext">The HTTP context.</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpContextPackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpContext,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpContextPackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpContext">The HTTP context.</param>
+            <param name="mustApplySynchronously">if set to <c>true</c> [must apply synchronously].</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpContextPackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpContextBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpContextPackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpContext">The HTTP context.</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpContextPackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpContextBase,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpContextPackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpContext">The HTTP context.</param>
+            <param name="mustApplySynchronously">if set to <c>true</c> [must apply synchronously].</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpContextPackageDecorator.Decorate(Rollbar.DTOs.Data)">
+            <summary>
+            Decorates the specified rollbar data.
+            </summary>
+            <param name="rollbarData">The rollbar data.</param>
+        </member>
+        <member name="T:Rollbar.Net.AspNet.HttpRequestPackageDecorator">
+            <summary>
+            Class HttpRequestPackageDecorator.
+            Implements the <see cref="T:Rollbar.RollbarPackageDecoratorBase" /></summary>
+            <seealso cref="T:Rollbar.RollbarPackageDecoratorBase" />
+        </member>
+        <member name="F:Rollbar.Net.AspNet.HttpRequestPackageDecorator._httpRequest">
+            <summary>
+            The HTTP request
+            </summary>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpRequestPackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpRequest)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpRequestPackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpRequest">The HTTP request.</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpRequestPackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpRequest,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpRequestPackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpRequest">The HTTP request.</param>
+            <param name="mustApplySynchronously">if set to <c>true</c> [must apply synchronously].</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpRequestPackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpRequestBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpRequestPackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpRequest">The HTTP request.</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpRequestPackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpRequestBase,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpRequestPackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpRequest">The HTTP request.</param>
+            <param name="mustApplySynchronously">if set to <c>true</c> [must apply synchronously].</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpRequestPackageDecorator.Decorate(Rollbar.DTOs.Data)">
+            <summary>
+            Decorates the specified rollbar data.
+            </summary>
+            <param name="rollbarData">The rollbar data.</param>
+        </member>
+        <member name="T:Rollbar.Net.AspNet.HttpResponsePackageDecorator">
+            <summary>
+            Class HttpResponsePackageDecorator.
+            Implements the <see cref="T:Rollbar.RollbarPackageDecoratorBase" />
+            </summary>
+            <seealso cref="T:Rollbar.RollbarPackageDecoratorBase" />
+        </member>
+        <member name="F:Rollbar.Net.AspNet.HttpResponsePackageDecorator._httpResponse">
+            <summary>
+            The HTTP response
+            </summary>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpResponsePackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpResponse)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpResponsePackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpResponse">The HTTP response.</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpResponsePackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpResponse,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpResponsePackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpResponse">The HTTP response.</param>
+            <param name="mustApplySynchronously">if set to <c>true</c> [must apply synchronously].</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpResponsePackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpResponseBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpResponsePackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpResponse">The HTTP response.</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpResponsePackageDecorator.#ctor(Rollbar.IRollbarPackage,System.Web.HttpResponseBase,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rollbar.Net.AspNet.HttpResponsePackageDecorator"/> class.
+            </summary>
+            <param name="packageToDecorate">The package to decorate.</param>
+            <param name="httpResponse">The HTTP response.</param>
+            <param name="mustApplySynchronously">if set to <c>true</c> [must apply synchronously].</param>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.HttpResponsePackageDecorator.Decorate(Rollbar.DTOs.Data)">
+            <summary>
+            Decorates the specified rollbar data.
+            </summary>
+            <param name="rollbarData">The rollbar data.</param>
+        </member>
+        <member name="T:Rollbar.Net.AspNet.RollbarHttpModule">
+            <summary>
+            Class RollbarHttpModule.
+            Implements the <see cref="T:System.Web.IHttpModule" /></summary>
+            <seealso cref="T:System.Web.IHttpModule" />
+            <remarks>
+            This HttpModule relies on proper Rollbar configuration specified within the Web.config file.
+            For example:
+            <code>
+                <configSections>
+                    <section name = "rollbar" type="Rollbar.NetFramework.RollbarConfigSection, Rollbar"/>
+                    <section name = "rollbarTelemetry" type="Rollbar.NetFramework.RollbarTelemetryConfigSection, Rollbar"/>
+                  </configSections>
+                  
+                <rollbar
+                  accessToken = "17965fa5041749b6bf7095a190001ded"
+                  environment="unit-tests"
+                  enabled="true"
+                  scrubFields="ThePassword, Secret"
+                  scrubSafelistFields="ThePassword"
+                  logLevel="Info"
+                  maxReportsPerMinute="160"
+                  reportingQueueDepth="120"
+                  personDataCollectionPolicies="Username, Email"
+                  ipAddressCollectionPolicy="CollectAnonymized"
+                  />
+                
+                <rollbarTelemetry
+                  telemetryEnabled = "true"
+                  telemetryQueueDepth="100"
+                  telemetryAutoCollectionTypes="Network, Log, Error"
+                  telemetryAutoCollectionInterval="00:00:00.3000000"
+                  />
+            </code>
+            </remarks>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.RollbarHttpModule.Dispose">
+            <summary>
+            Disposes of the resources (other than memory) used by the module that implements <see cref="T:System.Web.IHttpModule" />.
+            </summary>
+        </member>
+        <member name="M:Rollbar.Net.AspNet.RollbarHttpModule.Init(System.Web.HttpApplication)">
+            <summary>
+            Initializes a module and prepares it to handle requests.
+            </summary>
+            <param name="context">An <see cref="T:System.Web.HttpApplication" />
+            that provides access to the methods, properties, and events common to all application objects within an ASP.NET application
+            </param>
+        </member>
+    </members>
+</doc>

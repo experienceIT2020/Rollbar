@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBFramework", "RBFramework\RBFramework.csproj", "{07396C40-6E3B-4710-A494-F779B074DC66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07396C40-6E3B-4710-A494-F779B074DC66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07396C40-6E3B-4710-A494-F779B074DC66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07396C40-6E3B-4710-A494-F779B074DC66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07396C40-6E3B-4710-A494-F779B074DC66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45F6E66B-68D3-44B3-82D1-7FA24FD4B0E7}
+	EndGlobalSection
+EndGlobal
